@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+        marlonrinos
+        </title>
+        <script type="text/javascript">
+            flag=1
+            function f1()
+            {
+                var name=prompt();
+                if(name ==""||Name == null){
+                    alert("Please Enter your name:");
+                else{
+                    alert("Hi" + name + "Good morning");
+                }alert("how's Life?");
+                 alert("Remember" + name +"I'm always here for you hehehhe");
+                 alert("anyways goodluck on your journey in life");
+                 alert("I hope you enjoy hehehehe");
+
+                }
+            function f()
+            {
+            if(flag==1)
+                {
+                    Bn.style.top=400
+                    Bn.style.left=300
+                    flag=2
+                }
+                else if (flag==2)
+                {
+                    Bn.style.top=400
+                    Bn.style.left=50
+                    flag=3
+                }
+                else if(flag==3)
+                {
+                    Bn.style.top=370
+                    Bn.style.left=166
+                    flag=()
+                }
+                }
+            }
+        
+        </script>
+    </head>
+    <body>
+        <h1> hey are you okay?!</h1>
+
+        <img src="https://media1.tenor.com/m/_4TBfA_iv78AAAAC/dudu-bubu.gif" "height="200"/>
+        <h1 style="#">You're amazing!</h1>
+        <div id="By" style="position: absolute; left:64px; top:370px; width:210px; height: 210px;"><input type="button" value="YES" onclick="f1()">
+        </div>
+        <div id="Bn"style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+        <input type="button" value="NO" onmouseover="f2()">
+        </div>
+    </body>
+</html>

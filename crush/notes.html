@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Viewport height */
+            background-color: #f2f2f2; /* Background color, adjust as needed */
+        }
+
+        header, main {
+            width: 100%;
+            max-width: 800px; /* Adjust as needed */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            header {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Common button styles */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        /* Primary button style */
+        .primary {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Secondary button style */
+        .secondary {
+            background-color: #f2f2f2;
+            color: #333;
+            border: 2px solid #333;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript">
+        var flag = 1;
+
+        function f1() {
+            var name = prompt("Can you put your name here po plzzzzzz: :):");
+            if (name !== null && name !== "") {
+                alert("Hi " + name + " Good evening po :");
+                alert("take a rest po if you're too tired");
+                alert("Remember " + name + "  that I'm always here for you my crushiee cakeees hehe chrt");
+                alert("crayola kaba? kasi nagbibigay ka ng kulay sa buhay ko. boom enebe enebe hehehe corny jwk jwk");
+                alert(" HEHHEE your beauty shines as brightly as the moon, lightning up the night with grace and elegance wow english");
+                alert("Anyways, good luck on your journey in life");
+                alert("I hope you enjoy, good night sleep well your love is my lullaby-sweet dreams po hehehehe");
+
+                // Create and insert image
+                var img = document.createElement("img");
+                img.src = "aesthetic-indie.gif "; // Replace with your image URL
+                document.body.appendChild(img);
+            }
+        }
+
+        function f() {
+            var Bn = document.getElementById("Bn");
+            if (flag < 5) {
+                Bn.style.top = "400px";
+                Bn.style.left = flag === 1 ? "300px" : "50px";
+                if (flag === 2) Bn.style.left = "100px";
+                flag++;
+            } else if (flag === 5) {
+                Bn.style.top = "370px";
+                Bn.style.left = "166px";
+                flag = 0;
+            }
+        }
+
+        // Listen for Enter key press
+        document.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                // Create and insert image
+                var img = document.createElement("img");
+                img.src = "httpspbs.twimg.commediaFyk7XMnaEAI3PsB.jpg"; // Replace with your image URL
+                document.body.appendChild(img);
+            }
+        });
+    </script>
+    <title>crushiee cakes</title>
+</head>
+<body>
+
+<header>
+    <h1>helloo po uhmmm ehh ano kasi pasagot po hehehe    </h1>
+</header>
+
+<main>
+    <img src="https://media1.tenor.com/m/aOban4vfmYMAAAAC/ggutara15-gguitara156.gif" alt="Animated GIF" />
+    <h1 style="#">hello!!! are you okayy po ba?????</h1>
+    <div class="button-container">
+        <div id="By" style="width: 210px; height: 210px;">
+            <input type="button" class="button primary" value="Yupppp" onclick="f1()">
+        </div>
+        <div id="Bn" style="position:absolute; right: auto; width:280px; height:280px;">
+            <input type="button" class="button secondary" value="nope" onmouseover="f()">
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
